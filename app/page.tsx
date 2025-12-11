@@ -5,6 +5,7 @@ import spaceMarineData from "../top-100-space-marine.json";
 import milSciFiData from "../top-100-mil-sci-fi.json";
 import spaceFleetData from "../top-100-space-fleet.json";
 import BookCard from "./components/BookCard";
+import Footer from "./components/Footer";
 
 interface Book {
   title?: string;
@@ -126,6 +127,7 @@ export default function Home() {
           })}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
