@@ -62,7 +62,7 @@ export default function Home() {
             href="/about"
             className="font-mono text-sm text-cyan-400 transition-colors hover:text-cyan-300"
           >
-            About
+            ABOUT
           </Link>
         </div>
 
