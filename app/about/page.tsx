@@ -19,7 +19,7 @@ export default function About() {
         {/* Title */}
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
-            About Top 100 Sci-Fi
+            About Top 100 Military Sci-Fi
           </h1>
         </div>
 
@@ -33,7 +33,7 @@ export default function About() {
               bestseller lists to help you discover the most popular sci-fi books in the genre.
             </p>
           </div>
-          
+
           <div className="rounded-lg border border-cyan-500/20 bg-gradient-to-br from-slate-900/50 to-slate-950/50 p-8 shadow-lg">
             <h2 className="mb-4 font-mono text-2xl font-bold text-cyan-400">Affiliate Disclosure</h2>
             <p>
