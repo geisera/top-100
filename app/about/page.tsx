@@ -34,16 +34,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-lg border border-cyan-500/20 bg-gradient-to-br from-slate-900/50 to-slate-950/50 p-8 shadow-lg">
-            <h2 className="mb-4 font-mono text-2xl font-bold text-cyan-400">Affiliate Disclosure</h2>
-            <p>
-              This site contains affiliate links to Amazon. When you purchase books through our links,
-              we may earn a small commission at no additional cost to you. This helps support the
-              maintenance and development of this resource.
-            </p>
-          </div>
-
-          <div className="rounded-lg border border-cyan-500/20 bg-gradient-to-br from-slate-900/50 to-slate-950/50 p-8 shadow-lg">
+           <div className="rounded-lg border border-cyan-500/20 bg-gradient-to-br from-slate-900/50 to-slate-950/50 p-8 shadow-lg">
             <h2 className="mb-4 font-mono text-2xl font-bold text-cyan-400">Categories</h2>
             <div className="space-y-3">
               <div>
@@ -60,6 +51,16 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          <div className="rounded-lg border border-cyan-500/20 bg-gradient-to-br from-slate-900/50 to-slate-950/50 p-8 shadow-lg">
+            <h2 className="mb-4 font-mono text-2xl font-bold text-cyan-400">Affiliate Disclosure</h2>
+            <p>
+              This site contains affiliate links to Amazon. When you purchase books through our links,
+              we may earn a small commission at no additional cost to you. This helps support the
+              maintenance and development of this resource.
+            </p>
+          </div>
+
         </div>
 
         {/* Back Link */}
