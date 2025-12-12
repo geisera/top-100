@@ -86,9 +86,9 @@ export default function BookCard({ book, index }: BookCardProps) {
           <div className="absolute bottom-0 right-0 h-3 w-3 border-b-2 border-r-2 border-purple-500 transition-all group-hover:h-4 group-hover:w-4 group-hover:border-purple-400" />
 
           {/* Scan line animation */}
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity">
             <div
-              className="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60 animate-pulse"
+              className="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60"
               style={{ top: "30%", animation: "scan 3s ease-in-out infinite" }}
             />
           </div>
@@ -266,19 +266,6 @@ export default function BookCard({ book, index }: BookCardProps) {
       <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-lg opacity-0 transition-opacity group-hover:opacity-30">
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse" />
       </div>
-
-      {/* High-resolution preview on hover (large screens only) */}
-      {highResImage && (
-        <div className="pointer-events-none absolute right-full top-0 mr-4 hidden h-96 w-72 overflow-hidden rounded-lg border-2 border-cyan-400/50 bg-slate-950 opacity-0 shadow-2xl shadow-cyan-500/30 transition-opacity duration-300 group-hover:opacity-100 xl:block">
-          <Image
-            src={highResImage}
-            alt={`${book.title} - High Resolution`}
-            fill
-            className="object-contain"
-            sizes="288px"
-          />
-        </div>
-      )}
     </a>
   );
 }
