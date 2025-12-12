@@ -1,16 +1,3 @@
 {
-  "crons": [
-    {
-      "path": "/api/mil-scifi-scraper",
-      "schedule": "0 0 * * *"
-    },
-    {
-      "path": "/api/space-marine-scraper",
-      "schedule": "0 1 * * *"
-    },
-    {
-      "path": "/api/space-fleet-scraper",
-      "schedule": "0 2 * * *"
-    }
-  ]
+
 }
