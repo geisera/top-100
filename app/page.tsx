@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import spaceMarineData from "../top-100-space-marine.json";
 import milSciFiData from "../top-100-mil-sci-fi.json";
 import spaceFleetData from "../top-100-space-fleet.json";
@@ -55,6 +56,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
       <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        {/* Navigation */}
+        <div className="mb-8 flex justify-end">
+          <Link
+            href="/about"
+            className="font-mono text-sm text-cyan-400 transition-colors hover:text-cyan-300"
+          >
+            About
+          </Link>
+        </div>
+
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
             Top 100 {categoryTitle} Sci-Fi Books
